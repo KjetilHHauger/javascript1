@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="demo">This is a paragraph</p>
+    <button onclick="changeText()">Click on me!</button>
+    <script>
+      function changeText() {
+        // 1 Java script goes from the top to bottom
+        console.log("hesham");
+        // 2
+        console.log(document.getElementById("demo"));
+        // 3
+        console.dir(document.getElementById("demo"));
+        // 4
+        // select the id in the document(DOM), = means to be
+        document.getElementById("demo").innerHTML = "Takk Ingrid";
+      }
+    </script>
+  </body>
+</html>
